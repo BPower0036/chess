@@ -31,15 +31,15 @@ Raise an [issue](https://github.com/BPower0036/timburgan/issues), and include th
 
 | Move  | Who |
 | ----- | --- |
+|  to  | [@BPower0036](https://github.com/BPower0036) |
 | F4 to F3 | [@JohnyP36](https://github.com/JohnyP36) |
 | F2 to G1 | [@BPower0036](https://github.com/BPower0036) |
 | H5 to E5 | [@JohnyP36](https://github.com/JohnyP36) |
 | G1 to F2 | [@BPower0036](https://github.com/BPower0036) |
-| F5 to F4 | [@JohnyP36](https://github.com/JohnyP36) |
 
 **Top 20 Leaderboard: Most moves across all games, except me.**
 
 | Moves | Who |
 | ----- | --- |
 | 46 | [@BPower0036](https://github.com/BPower0036) |
-| 42 | [@JohnyP36](https://github.com/JohnyP36) |
+| 43 | [@JohnyP36](https://github.com/JohnyP36) |
