@@ -427,7 +427,7 @@ jobs:
 
             Raise an [issue](https://github.com/#{ENV.fetch('REPOSITORY')}/issues), and include the text _cc @timburgan_.
 
-            **Last few moves, this game**
+            **Last few moves of this game**
 
             | Move  | Who |
             | ----- | --- |
