@@ -30,7 +30,7 @@ Raise an [issue](https://github.com/BPower0036/chess/issues), and include the te
 
 | Move  | Who |
 | ----- | --- |
+|  to  | [@BPower0036](https://github.com/BPower0036) |
 | C2 to C1 | [@JohnyP36](https://github.com/JohnyP36) |
 | F5 to F6 | [@BPower0036](https://github.com/BPower0036) |
 | C1 to D1 | [@JohnyP36](https://github.com/JohnyP36) |
-| F4 to F5 | [@BPower0036](https://github.com/BPower0036) |
