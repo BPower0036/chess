@@ -426,7 +426,7 @@ jobs:
 
             **Notice a problem?**
 
-            Raise an [issue](https://github.com/#{ENV.fetch('REPOSITORY')}/issues), and include the text _cc @timburgan_.
+            Raise an [issue](https://github.com/#{ENV.fetch('REPOSITORY')}/issues), and include the text _cc @BPower0036.
 
             **Last few moves of this game**
 
