@@ -12,6 +12,7 @@ jobs:
         uses: MajorScruffy/delete-workflow-runs@v0.1.0
         with:
           repository: BPower0036/chess
-          older-than-seconds: 604.800
+          older-than-seconds: 604,800
+          what-if: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
