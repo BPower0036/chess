@@ -13,6 +13,6 @@ jobs:
         with:
           repository: BPower0036/chess
           older-than-seconds: 604,800
-          what-if: false
+          what-if: 'false'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
