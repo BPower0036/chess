@@ -8,13 +8,6 @@ jobs:
   del_runs:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete workflow runs 2
-        uses: dmvict/clean-workflow-runs@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          save_period: 0
-          save_min_runs_number: 0
-          
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2.0.1
         with:
@@ -23,4 +16,9 @@ jobs:
           retain_days: 5
           keep_minimum_runs: 0
 
-
+      - name: Delete workflow runs 2
+        uses: dmvict/clean-workflow-runs@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          save_period: 5
+          save_min_runs_number: 0
