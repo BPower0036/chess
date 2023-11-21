@@ -184,9 +184,9 @@ jobs:
               i = 0
               issues&.each do |issue|
                 break if issue.title.start_with? 'chess|new'
-                if issue.title.start_with?('chess|move|') && ENV.fetch('REPOSITORY') == 'BPower0036/chess'
+                if issue.title.start_with?('chess|move|') && ENV.fetch('REPOSITORY') == 'Nomes77/chess'
                   if issue.user.login == ENV.fetch('EVENT_USER_LOGIN')
-                    comment_text = "@#{ENV.fetch('EVENT_USER_LOGIN')} Slow down! You _just_ moved, so can't immediately take the next turn. Invite a friend to take the next turn! [Share on Twitter...](https://twitter.com/share?text=I'm+playing+chess+on+a+GitHub+Profile+Readme!+I+just+moved.+You+have+the+next+move+at+https://github.com/BPower0036/chess)"
+                    comment_text = "@#{ENV.fetch('EVENT_USER_LOGIN')} Slow down! You _just_ moved, so can't immediately take the next turn. Invite a friend to take the next turn! [Share on Twitter...](https://twitter.com/share?text=I'm+playing+chess+on+a+GitHub+Profile+Readme!+I+just+moved.+You+have+the+next+move+at+https://github.com/Nomes77/chess)"
                     error_notification(ENV.fetch('REPOSITORY'), ENV.fetch('EVENT_ISSUE_NUMBER'), 'confused', comment_text, e)
                     exit(0)
                   end
@@ -251,13 +251,13 @@ jobs:
                 end
                 game_stats[:players] = game_stats[:players]&.uniq
                 hours = (game_stats[:start_time] - game_stats[:end_time]).to_i.abs / 3600
-                @octokit.add_comment(ENV.fetch('REPOSITORY'), ENV.fetch('EVENT_ISSUE_NUMBER'), "That's game over! Thank you for playing that chess game. That game had #{game_stats[:moves]} moves, #{game_stats[:players]&.length} players, and went for #{hours} hours. Let's play again at https://github.com/Bpower0036/chess.\n\nPlayers that game: #{game_stats[:players].join(', ')}")
+                @octokit.add_comment(ENV.fetch('REPOSITORY'), ENV.fetch('EVENT_ISSUE_NUMBER'), "That's game over! Thank you for playing that chess game. That game had #{game_stats[:moves]} moves, #{game_stats[:players]&.length} players, and went for #{hours} hours. Let's play again at https://github.com/Nomes77/chess.\n\nPlayers that game: #{game_stats[:players].join(', ')}")
               end
           end
 
 
 
-          @octokit.add_comment(ENV.fetch('REPOSITORY'), ENV.fetch('EVENT_ISSUE_NUMBER'), "Done. View back at https://github.com/BPower0036/timburgan\n\nAsk a friend to take the next move: [Share on Twitter...](https://twitter.com/share?text=I'm+playing+chess+on+a+GitHub+Profile+Readme!+I+just+moved.+You+have+the+next+move+at+https://github.com/BPower0036/chess)")          
+          @octokit.add_comment(ENV.fetch('REPOSITORY'), ENV.fetch('EVENT_ISSUE_NUMBER'), "Done. View back at https://github.com/Nomes77/timburgan\n\nAsk a friend to take the next move: [Share on Twitter...](https://twitter.com/share?text=I'm+playing+chess+on+a+GitHub+Profile+Readme!+I+just+moved.+You+have+the+next+move+at+https://github.com/Nomes77/chess)")          
           @octokit.close_issue(ENV.fetch('REPOSITORY'), ENV.fetch('EVENT_ISSUE_NUMBER'))
 
 
@@ -354,7 +354,7 @@ jobs:
 
           new_readme = <<~HTML
 
-            ## [@BPower0036](https://github.com/BPower0036)'s and [@JohnyP36](https://github.com/JohnyP36)'s Chess Tournament
+            ## [@Nomes77](https://github.com/Nomes77)'s and [@JohnyP36](https://github.com/JohnyP36)'s Chess Tournament
 
             **#{game_state}** This is open to ANYONE to play the next move. That's the point. </br>
             :wave:  It's your turn! Move a #{(game.board.active_color) ? 'black (solid)' : 'white (hollow)'} piece.
@@ -426,7 +426,7 @@ jobs:
 
             **Notice a problem?**
 
-            Raise an [issue](https://github.com/#{ENV.fetch('REPOSITORY')}/issues), and include the text _cc @BPower0036.
+            Raise an [issue](https://github.com/#{ENV.fetch('REPOSITORY')}/issues), and include the text _cc @Nomes77.
 
             **Last few moves of this game**
 
